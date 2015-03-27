@@ -39,7 +39,7 @@ duk_ret_t native_request_send(duk_context *ctx) {
 	return 1;
 }
 
-JNIEXPORT jboolean JNICALL Java_fi_helsinki_cs_iot_hub_javascript_DuktapeJavascriptEngineWrapper_runScript
+JNIEXPORT jboolean JNICALL Java_fi_helsinki_cs_iot_hub_jsengine_DuktapeJavascriptEngineWrapper_runScript
 (JNIEnv *env, jobject thisObj, jstring script) {
 	//duk_context *ctx = duk_create_heap_default();
 	duk_context *ctx = duk_create_heap(NULL, NULL, NULL, NULL, &myFatal);
